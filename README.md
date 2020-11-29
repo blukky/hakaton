@@ -1,5 +1,10 @@
 # Star Trek
 
+https://drive.google.com/file/d/1KvYa6icvMmRCs_6H96dbboZdGnN7AzbQ/view?usp=sharing
+
+https://drive.google.com/file/d/1Q1I3gmlOhFko2dod69z8BjhC8p4dZJLj/view?usp=sharing
+
+
 Бизнес кейс: при посещении банка идентифицировать клиента по фото и получить его финансовый профиль для того, чтобы предложить максимально подходящие ему продукты.
 Задача: Создать решение, которое сможет:
 - по фотографии найти человека в социальных сетях(VK,FB);
