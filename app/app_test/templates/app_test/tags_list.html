@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Список тегов - {{ block.super }}
+{% endblock %}
+
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+    <ul>
+      <li><a href="{% url 'tag_create_url' %}">Добавить новый тег</a></li>
+      {% comment %} <li><a href="{% url 'tag_update' %}">Изменить тег</a></li> {% endcomment %}
+      {% comment %} <li><a href="{% url 'tag_delete_url' %}">Удалить комментарий</a></li> {% endcomment %}
+    </ul>
+        <div class="col-6 offset-md-2">
+          <h1 class="mt-5">Теги:</h1>
+
+          {% for tag in tags %}
+              <h3> <a href="{{tag.get_absolute_url}}"> {{ tag.title }} </a> </h3>
+          {% endfor %}
+              </div>
+          </div>
+      </div>
+
+{% endblock %}

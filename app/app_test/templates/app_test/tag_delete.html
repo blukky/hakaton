@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Удаление тега {{ tag.title|title }} - {{ block.super }}
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-6 offset-md-2">
+                <form action="{% url 'tag_delete_url' slug=tag.slug %}" method="POST">
+
+                    {% csrf_token %}
+
+                    <h3>Are you sure you wnt to delete tag <b>"{{ tag.title|title }}"</b></h3>
+                    <a href="{{ tag.get_absolute_url }}">Cancel</a>
+                    <button type="submit", name='button', class="btn btn-danger">Submit</button>
+
+                </form>
+            </div>
+    </div>
+</div>
+{% endblock %}

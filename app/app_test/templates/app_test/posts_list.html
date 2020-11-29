@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Отзывы
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container mt-5">
+    <div class="row">
+    <ul>
+      <li><a href="{% url 'post_create_url' %}">Оставить комментарий</a></li>
+      {% comment %} <li><a href="{% url 'post_update' %}">Изменить комментарий</a></li> {% endcomment %}
+      {% comment %} <li><a href="{% url 'post_delete_url' %}">Удалить комментарий</a></li> {% endcomment %}
+    </ul>
+        <div class="col-6 offset-md-2">
+            <h1 class="mb-5">Отзывы и комментарии:</h1>
+            {% for post in posts %}
+
+              {% include 'app_test/includes/post_card_template.html' %}
+              
+            {% endfor %}
+              </div>
+          </div>
+      </div>
+
+{% endblock %}

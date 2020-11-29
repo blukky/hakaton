@@ -1,0 +1,331 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Pet's Planet
+{% endblock %}
+
+{% block content %}
+    <!-- slider_area_start -->
+    <div class="slider_area">
+        <div class="single_slider slider_bg_1 d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-111 col-md-6">
+                        <div class="slider_text">
+                            <h3>Главсервис <br> это ремонт для вас <span></span></h3>
+                            <p>Любая техника не вечна, <br> но что мешает это исправить.</p>
+                            <a href="{% url 'add' %}" class="boxed-btn4">Подать заявку</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dog_thumb d-none d-lg-block">
+                <img src="{% static "img/banner/krug.png" %}" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- slider_area_end -->
+
+    <!-- service_area_start  -->
+    <div class="service_area">
+        <div class="container">
+            <div class="row justify-content-center ">
+                <div class="col-lg-7 col-md-10">
+                    <div class="section_title text-center mb-95">
+                        <h3>Сервисное обслуживание и ремонт</h3>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_service">
+                         <div class="service_thumb service_icon_bg_1 d-flex align-items-center justify-content-center">
+                             <div class="service_icon">
+                                 <img src="{% static "img/service/123.png" %}" alt="">
+                             </div>
+                         </div>
+                         <div class="service_content text-center">
+                            <h3>Ремонт холодильников</h3>
+                            <p>Даже лучшие в мире холодильники выходят из строя. Обратитесь к опытному мастеру, специализация которого-Главсервис</p>
+                         </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_service active">
+                         <div class="service_thumb service_icon_bg_1 d-flex align-items-center justify-content-center">
+                             <div class="service_icon">
+                                 <img src="{% static "img/service/1234.png" %}" alt="">
+                             </div>
+                         </div>
+                         <div class="service_content text-center">
+                            <h3>Ремонт морозильников</h3>
+                            <p>Отремонтируем морозильные шкафы и лари любой конфигурации: от простых бытовых до сложных промышленных.</p>
+                         </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_service">
+                         <div class="service_thumb service_icon_bg_1 d-flex align-items-center justify-content-center">
+                             <div class="service_icon">
+                                 <img src="{% static "img/service/12345.png" %}" alt="">
+                             </div>
+                         </div>
+                         <div class="service_content text-center">
+                            <h3>Ремонт посудомоченых машин</h3>
+                            <p>Мы понимаем тревогу за сохранность посуды, стоимость которой иногда превышает цену посудомойки. Решим вопрос максимально быстро.</p>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service_area_end -->
+
+    <!-- pet_care_area_start  -->
+    <div class="pet_care_area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-6">
+                    <div class="pet_thumb">
+                        <img src="{% static "img/about/1.png" %}" alt="">
+                    </div>
+                </div>
+               <div class="col-lg-6 offset-lg-1 col-md-6">
+                    <div class="pet_info">
+                        <div class="section_title">
+                            <h3><span>Фиксированный прайс-лист </span> <br>
+                               </h3>
+                            <p>Работаем с постоянными ценами. <br>  Примерную стоимость работ можно узнать по телефону,
+							<br> окончательную – сразу после диагностики. <br>
+                               </p>
+                            <a href="{% url 'prices' %}" class="boxed-btn3">Цены</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- pet_care_area_end  -->
+
+
+
+
+    <!-- adapt_area_start  -->
+    <div class="adapt_area">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-5">
+                    <div class="adapt_help">
+                        <div class="section_title">
+                            <h3><span>Дополнительный сервис в подарок 
+                                </h3>
+                            <p>Бесплатно произведем одну из трех дополнительных сервисных <br> процедур. Тип работ зависит от модели и типа оборудования.  <br> Определяется мастером на месте. <br> 
+    Чистка дренажной системы
+    Чистка и смазка выдвижных механизмов системы BioFresh
+    Смазка и регулировка петель дверей
+ </p> 
+                            <a href="{% url 'prices' %}" class="boxed-btn3">Ремонт</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="adapt_about">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="single_adapt text-center">
+                                    <img src="{% static "img/adapt_icon/1.png" %}" alt="">
+                                    <div class="adapt_content">
+                                        <h3 class="counter">1700</h3>
+                                        <p>Совершено выездов	</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="single_adapt text-center">
+                                    <img src="{% static "img/adapt_icon/3.png" %}" alt="">
+                                    <div class="adapt_content">
+                                        <h3><span class="counter">100</span></h3>
+                                        <p>Деталей при себе</p>
+                                    </div>
+                                </div>
+                                <div class="single_adapt text-center">
+                                    <img src="{% static "img/adapt_icon/2.png" %}" alt="">
+                                    <div class="adapt_content">
+                                        <h3><span class="counter">1478</span>+</h3>
+                                        <p>Довольных клинтов</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- adapt_area_end  -->
+
+    <!-- testmonial_area_start  -->
+    <div class="testmonial_area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="textmonial_active owl-carousel">
+                        <div class="testmonial_wrap">
+                            <div class="single_testmonial d-flex align-items-center">
+                                <div class="test_thumb">
+                                    <img src="{% static "img/testmonial/1.jpg" %}" alt="">
+                                </div>
+                                <div class="test_content">
+                                    <h4>Никита Палтусов</h4>
+                                    <span>Директор</span>
+                                    <p>«Когда вы создаете собственную компанию, это больше похоже на искусство, чем на науку, ведь вы ничего не знаете. Вместо решения профильных проблем, попробуйте решить что-нибудь глубоко личное для вас самих. Всё будет идеально, если вы будете обычным человеком и просто решите собственную проблему способом, который может помочь миллионам других людей».</p>
+                                </div>
+                            </div>
+                        </div>
+						
+                        <div class="testmonial_wrap">
+                            <div class="single_testmonial d-flex align-items-center">
+                                <div class="test_thumb">
+                                    <img src="{% static "img/testmonial/2d.jpg" %}" alt="">
+                                </div>
+                                <div class="test_content">
+                                    <h4>Андрей Дудкин</h4>
+                                    <span>Идейный специалист</span>
+                                    <p>«Тренируйте людей достаточно хорошо, чтобы они могли уходить, относитесь к ним достаточно хорошо, чтобы они не хотели».</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testmonial_wrap">
+                            <div class="single_testmonial d-flex align-items-center">
+                                <div class="test_thumb">
+                                    <img src="{% static "img/testmonial/3p.jpg" %}" alt="">
+                                </div>
+                                <div class="test_content">
+                                    <h4>Александр Иванов</h4>
+                                    <span>Фронт-энд специалист</span>
+                                    <p>«По-хорошему, больше половины популярных работ были написаны просто отвратительно. Вернее, хайп вокруг них совершенно не соответствует качеству кода и уровню поддержки от организаторов. Но поскольку на Front подсаживалась сразу куча людей, он выживал и продолжал существовать».</p>
+                                </div>
+								</div>
+								</div>
+								<div class="testmonial_wrap">
+                            <div class="single_testmonial d-flex align-items-center">
+                                <div class="test_thumb">
+                                    <img src="{% static "img/testmonial/4r.jpg" %}" alt="">
+                                </div>
+                                <div class="test_content">
+                                    <h4>Валерий Руссу</h4>
+                                    <span>Бэк-энд специалист</span>
+                                    <p>«Пользователь совершает действие, а реакция сервиса или сайта на него затрагивает нужную часть бэкенда. В это понятие входит всё, что позволяет вам реализовывать логику работы тех функций, которые предоставляет интерфейс».</p>
+                                </div>
+								</div>
+								</div>
+								<div class="testmonial_wrap">
+                            <div class="single_testmonial d-flex align-items-center">
+								<div class="test_thumb">
+                                    <img src="{% static "img/testmonial/5sh.jpg" %}" alt="">
+                                </div>
+                                <div class="test_content">
+                                    <h4>Дмитрий Шалькин</h4>
+                                    <span>Специалист БД</span>
+                                    <p>«Data science может показаться на первый взгляд сложным — и так оно и есть! Однако, удивительный факт в том, что data science можно сравнить с луковицей: надо изучать слой за слоем. Это называется top-down approach, когда ты сначала на примитивном уровне смотришь, как работают алгоритмы, как за пару строк можно натренировать нейросеть — без фактического знания процессов — просто задаешь входные данные, пару строк кода, и все. Первый слой луковицы снят. Дальше больше. Тебе становится интересно, ты хочешь уже узнать — как. Как оно работает? Ты погружаешься глубже, смотришь на код, реализацию. Потом тебе становится интересно, почему этот код написан так. Оказывается, что есть теоретические обоснования. И так далее. Поддерживайте в себе интерес. Начинайте с верхней части, она вдохновляет. Почитайте Ричарда Фейнмана, он много писал про такой подход».</p>
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- testmonial_area_end  -->
+
+    <!-- team_area_start  -->
+    <div class="team_area">
+        <div class="container">
+            <div class="row justify-content-center ">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section_title text-center mb-95">
+                        <h3>Главсервис</h3>
+                        <p>Экономия на ремонте может лишить возможности воспользоватся 10 летней гарантией производителя
+</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_team">
+                        <div class="thumb">
+                            <img src="{% static "img/service/123.png" %}" alt="">
+                        </div>
+                        <div class="member_name text-center">
+                            <div class="mamber_inner">
+                                <h4></h4>
+                                <p>При поиске мастера для ремонта холодильной техники LIEBHERR помните, что в Санкт-Петербурге единицы специалистов по данному бренду, большинство из которых работают в сервисном центре “Либхер-СПС”. Доверяя ремонт не квалифицированному мастеру, Вы можете заплатить за ремонт дважды или лишиться возможности получить акт на замену или возврат полной стоимости холодильника.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_team">
+                        <div class="thumb">
+                            <img src="{% static "img/service/1234.png" %}" alt="">
+                        </div>
+                        <div class="member_name text-center">
+                            <div class="mamber_inner">
+                                <h4></h4>
+                                <p> Ведь покупая холодильную технику LIEBHERR, Вы получаете высокое качество, подтверждённое гарантией производителя в 10 лет. В случае, когда холодильник не подлежит ремонту, он списывается, что позволяет покупателю вернуть свои деньги полностью или получить новый холодильник. Но такая возможность аннулируется в случае ремонта техники малограмотным специалистом. К сожалению, в Санкт-Петербурге сейчас много ненадёжных организаций с мастерами, которые берутся ремонтировать то, в чём они не разбираются. Чаще всего такие специалисты сообщают после осмотра, что “ремонт очень дорогой” и уезжают, взяв с клиента деньги за диагностику. Хуже, когда они берутся за работу. Такой сервис усложняет жизнь клиентам настолько, что после, им приходится искать действительно разбирающегося в этой сложной технике специалиста, который сможет переделать “ремонт”.                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_team">
+                        <div class="thumb">
+                            <img src="{% static "img/service/12345.png" %}" alt="">
+                        </div>
+                        <div class="member_name text-center">
+                            <div class="mamber_inner">
+                                <h4></h4>
+                                <p> За годы обслуживания холодильников LIEBHERR, у нас накопилась целая коллекция фотографий “работ”, которые пришлось переделывать. Примеры, что представлены ниже — это ничтожная доля того, что мы встречаем в работе.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- team_area_start  -->
+
+    <div class="contact_anipat anipat_bg_1">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact_text text-center">
+                        <div class="section_title text-center">
+                            <h3>Обсудите проблему с мастером!</h3>
+                            <p>Звоните по телефону (812) 988-6040 или оставьте заявку на обратный звонок. <br> Мастер свяжется с вами в ближайшее время, предоставит полную <br> консультацию и сориентирует по стоимости.  </p>
+                        </div>
+                        <div class="contact_btn d-flex align-items-center justify-content-center">
+                            <a href="{% url 'prices' %}" class="boxed-btn4">Подать заявку</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=1024">
+      <title>1: No CSS</title>
+   </head>
+ 
+   
+
+
+
+{% endblock %}
+

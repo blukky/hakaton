@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Изменение тега - {{ block.super}}
+{% endblock %}
+
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-6 offset-md-2">
+                <form action="{{ tag.get_update_url }}" method="post">
+                    {% csrf_token %}
+
+                    {% for field in form %}
+                        <div class="form-group">
+
+                        {% if field.errors %}
+                            <div class="alert alert-danger">
+                                {{field.errors}}
+                            </div> 
+                        {% endif %}
+
+                        {{field.label}}
+                        {{field}}
+
+                        </div>
+
+                    {% endfor %}
+
+                    <button type="submit" class="btn btn-primary">Изменить тег</button>
+                </form>
+              </div>
+          </div>
+      </div>
+{% endblock %}

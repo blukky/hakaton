@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  {{ tag.title }} - {{ block.super }}
+{% endblock %}
+
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-6 offset-md-2">
+              <h1 class="mt-5">Комментарий c "{{ tag.title|title }}" тегом:</h1>
+
+              {% for post in tag.posts.all %}
+                  
+              {% include 'app_test/includes/post_card_template.html' %}
+
+              {% endfor %}
+              </div>
+          </div>
+      </div>
+
+{% endblock %}

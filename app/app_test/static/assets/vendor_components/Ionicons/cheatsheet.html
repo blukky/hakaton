@@ -1,0 +1,2890 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ionicons v2.0.0 Cheatsheet</title>
+  <style>
+    * {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    body {
+      background: #fff;
+      color: #444;
+      font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    a, a:visited {
+      color: #888;
+      text-decoration: underline;
+    }
+    a:hover, a:focus { color: #000; }
+
+    header {
+      border-bottom: 2px solid #ddd;
+      margin-bottom: 20px;
+      overflow: hidden;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      color: #888;
+      float: left;
+      font-size: 36px;
+      font-weight: 300;
+    }
+
+    header a {
+      float: right;
+      font-size: 14px;
+    }
+
+    .container {
+      margin: 0 auto;
+      max-width: 1200px;
+      min-width: 960px;
+      padding: 0 20px;
+      width: 95%;
+    }
+
+    .icon-row {
+      border-bottom: 1px dotted #ccc;
+      padding: 10px 0 20px;
+      margin-bottom: 20px;
+    }
+    .ion {
+      -webkit-touch-callout: text;
+      -webkit-user-select: text;
+      -khtml-user-select: text;
+      -moz-user-select: text;
+      -ms-user-select: text;
+      user-select: text;
+    }
+
+    .preview-icon { vertical-align: bottom; }
+
+    .preview-scale {
+      color: #888;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+
+    .step {
+      display: inline-block;
+      line-height: 1;
+      position: relative;
+      width: 10%;
+    }
+
+    .step i {
+      -webkit-transition: opacity .3s;
+      -moz-transition: opacity .3s;
+      -ms-transition: opacity .3s;
+      -o-transition: opacity .3s;
+      transition: opacity .3s;
+    }
+
+    .step:hover i { opacity: .3; }
+    
+    .size-12 { font-size: 12px; }
+    .size-14 { font-size: 14px; }
+    .size-16 { font-size: 16px; }
+    .size-18 { font-size: 18px; }
+    .size-21 { font-size: 21px; }
+    .size-24 { font-size: 24px; }
+    .size-32 { font-size: 32px; }
+    .size-48 { font-size: 48px; }
+    .size-64 { font-size: 64px; }
+    .size-96 { font-size: 96px; }
+    
+    .usage { margin-top: 10px; }
+    .usage input {
+      font-family: monospace;
+      margin-right: 3px;
+      padding: 2px 5px;
+      text-align: center;
+      -webkit-touch-callout: text;
+      -webkit-user-select: text;
+      -khtml-user-select: text;
+      -moz-user-select: text;
+      -ms-user-select: text;
+      user-select: text;
+    }
+
+    .usage label { 
+      font-size: 12px; 
+      text-align: right; 
+      padding: 0 3px 0 60px;
+    }
+    .usage label:first-child { padding-left: 0; }
+    .usage .name { width: 180px; }
+    .usage .html { width: 80px; }
+    .usage .css { width: 80px; }
+
+    footer {
+      color: #888;
+      font-size: 12px;
+      padding: 20px 0;
+    }
+  </style>
+  <link href="css/ionicons.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Ionicons v2.0.0 Cheatsheet, 733 icons:</h1>
+      <p><a href="http://ionicons.com/">Ionicons Homepage</a></p>
+    </header>
+    <div class="content">
+      <div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-alert"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-alert"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-alert"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-alert"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-alert"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-alert"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-alert"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-alert"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-alert"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-alert"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-alert" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf101;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf101;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f101" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-alert-circled"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-alert-circled"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-alert-circled"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-alert-circled"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-alert-circled"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-alert-circled"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-alert-circled"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-alert-circled"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-alert-circled"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-alert-circled"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-alert-circled" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf100;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf100;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f100" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-add"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-add"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-add"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-add"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-add"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-add"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-add"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-add"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-add"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-add"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-add" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf2c7;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf2c7;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f2c7" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-add-circle"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-add-circle"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-add-circle"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-add-circle"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-add-circle"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-add-circle"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-add-circle"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-add-circle"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-add-circle"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-add-circle"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-add-circle" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf359;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf359;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f359" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-alarm-clock"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-alarm-clock"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-alarm-clock"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-alarm-clock"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-alarm-clock"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-alarm-clock"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-alarm-clock"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-alarm-clock"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-alarm-clock"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-alarm-clock"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-alarm-clock" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf35a;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf35a;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f35a" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-alert"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-alert"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-alert"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-alert"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-alert"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-alert"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-alert"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-alert"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-alert"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-alert"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-alert" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf35b;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf35b;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f35b" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-apps"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-apps"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-apps"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-apps"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-apps"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-apps"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-apps"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-apps"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-apps"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-apps"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-apps" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf35c;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf35c;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f35c" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-archive"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-archive"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-archive"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-archive"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-archive"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-archive"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-archive"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-archive"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-archive"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-archive"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-archive" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf2c9;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf2c9;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f2c9" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-arrow-back"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-arrow-back"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-arrow-back"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-arrow-back"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-arrow-back"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-arrow-back"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-arrow-back"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-arrow-back"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-arrow-back"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-arrow-back"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-arrow-back" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf2ca;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf2ca;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f2ca" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-arrow-down"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-arrow-down"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-arrow-down"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-arrow-down"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-arrow-down"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-arrow-down"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-arrow-down"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-arrow-down"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-arrow-down"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-arrow-down"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-arrow-down" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf35d;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf35d;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f35d" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-arrow-dropdown"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-arrow-dropdown"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-arrow-dropdown"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-arrow-dropdown"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-arrow-dropdown"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-arrow-dropdown"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-arrow-dropdown"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-arrow-dropdown"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-arrow-dropdown"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-arrow-dropdown"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-arrow-dropdown" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf35f;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf35f;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f35f" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-arrow-dropdown-circle"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-arrow-dropdown-circle"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-arrow-dropdown-circle"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-arrow-dropdown-circle"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-arrow-dropdown-circle"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-arrow-dropdown-circle"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-arrow-dropdown-circle"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-arrow-dropdown-circle"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-arrow-dropdown-circle"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-arrow-dropdown-circle"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-arrow-dropdown-circle" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf35e;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf35e;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f35e" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-arrow-dropleft"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-arrow-dropleft"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-arrow-dropleft"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-arrow-dropleft"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-arrow-dropleft"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-arrow-dropleft"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-arrow-dropleft"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-arrow-dropleft"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-arrow-dropleft"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-arrow-dropleft"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-arrow-dropleft" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf361;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf361;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f361" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-arrow-dropleft-circle"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-arrow-dropleft-circle"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-arrow-dropleft-circle"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-arrow-dropleft-circle"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-arrow-dropleft-circle"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-arrow-dropleft-circle"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-arrow-dropleft-circle"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-arrow-dropleft-circle"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-arrow-dropleft-circle"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-arrow-dropleft-circle"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-arrow-dropleft-circle" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf360;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf360;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f360" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-arrow-dropright"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-arrow-dropright"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-arrow-dropright"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-arrow-dropright"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-arrow-dropright"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-arrow-dropright"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-arrow-dropright"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-arrow-dropright"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-arrow-dropright"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-arrow-dropright"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-arrow-dropright" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf363;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf363;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f363" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-arrow-dropright-circle"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-arrow-dropright-circle"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-arrow-dropright-circle"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-arrow-dropright-circle"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-arrow-dropright-circle"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-arrow-dropright-circle"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-arrow-dropright-circle"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-arrow-dropright-circle"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-arrow-dropright-circle"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-arrow-dropright-circle"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-arrow-dropright-circle" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf362;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf362;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f362" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-arrow-dropup"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-arrow-dropup"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-arrow-dropup"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-arrow-dropup"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-arrow-dropup"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-arrow-dropup"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-arrow-dropup"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-arrow-dropup"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-arrow-dropup"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-arrow-dropup"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-arrow-dropup" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf365;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf365;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f365" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-arrow-dropup-circle"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-arrow-dropup-circle"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-arrow-dropup-circle"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-arrow-dropup-circle"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-arrow-dropup-circle"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-arrow-dropup-circle"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-arrow-dropup-circle"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-arrow-dropup-circle"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-arrow-dropup-circle"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-arrow-dropup-circle"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-arrow-dropup-circle" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf364;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf364;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f364" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-arrow-forward"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-arrow-forward"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-arrow-forward"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-arrow-forward"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-arrow-forward"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-arrow-forward"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-arrow-forward"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-arrow-forward"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-arrow-forward"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-arrow-forward"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-arrow-forward" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf30f;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf30f;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f30f" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-arrow-up"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-arrow-up"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-arrow-up"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-arrow-up"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-arrow-up"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-arrow-up"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-arrow-up"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-arrow-up"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-arrow-up"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-arrow-up"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-arrow-up" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf366;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf366;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f366" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-attach"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-attach"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-attach"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-attach"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-attach"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-attach"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-attach"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-attach"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-attach"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-attach"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-attach" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf367;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf367;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f367" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-bar"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-bar"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-bar"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-bar"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-bar"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-bar"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-bar"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-bar"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-bar"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-bar"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-bar" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf368;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf368;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f368" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-bicycle"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-bicycle"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-bicycle"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-bicycle"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-bicycle"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-bicycle"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-bicycle"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-bicycle"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-bicycle"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-bicycle"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-bicycle" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf369;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf369;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f369" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-boat"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-boat"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-boat"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-boat"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-boat"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-boat"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-boat"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-boat"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-boat"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-boat"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-boat" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf36a;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf36a;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f36a" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-bookmark"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-bookmark"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-bookmark"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-bookmark"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-bookmark"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-bookmark"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-bookmark"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-bookmark"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-bookmark"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-bookmark"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-bookmark" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf36b;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf36b;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f36b" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-bulb"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-bulb"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-bulb"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-bulb"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-bulb"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-bulb"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-bulb"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-bulb"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-bulb"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-bulb"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-bulb" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf36c;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf36c;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f36c" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-bus"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-bus"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-bus"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-bus"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-bus"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-bus"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-bus"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-bus"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-bus"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-bus"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-bus" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf36d;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf36d;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f36d" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-calendar"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-calendar"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-calendar"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-calendar"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-calendar"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-calendar"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-calendar"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-calendar"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-calendar"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-calendar"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-calendar" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf2d1;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf2d1;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f2d1" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-call"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-call"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-call"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-call"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-call"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-call"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-call"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-call"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-call"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-call"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-call" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf2d2;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf2d2;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f2d2" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-camera"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-camera"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-camera"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-camera"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-camera"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-camera"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-camera"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-camera"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-camera"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-camera"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-camera" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf2d3;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf2d3;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f2d3" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-cancel"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-cancel"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-cancel"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-cancel"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-cancel"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-cancel"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-cancel"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-cancel"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-cancel"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-cancel"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-cancel" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf36e;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf36e;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f36e" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-car"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-car"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-car"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-car"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-car"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-car"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-car"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-car"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-car"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-car"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-car" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf36f;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf36f;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f36f" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-cart"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-cart"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-cart"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-cart"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-cart"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-cart"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-cart"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-cart"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-cart"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-cart"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-cart" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf370;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf370;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f370" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-chat"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-chat"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-chat"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-chat"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-chat"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-chat"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-chat"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-chat"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-chat"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-chat"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-chat" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf2d4;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf2d4;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f2d4" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-checkbox"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-checkbox"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-checkbox"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-checkbox"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-checkbox"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-checkbox"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-checkbox"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-checkbox"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-checkbox"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-checkbox"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-checkbox" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf374;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf374;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f374" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-checkbox-blank"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-checkbox-blank"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-checkbox-blank"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-checkbox-blank"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-checkbox-blank"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-checkbox-blank"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-checkbox-blank"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-checkbox-blank"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-checkbox-blank"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-checkbox-blank"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-checkbox-blank" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf371;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf371;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f371" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-checkbox-outline"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-checkbox-outline"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-checkbox-outline"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-checkbox-outline"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-checkbox-outline"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-checkbox-outline"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-checkbox-outline"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-checkbox-outline"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-checkbox-outline"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-checkbox-outline"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-checkbox-outline" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf373;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf373;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f373" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-checkbox-outline-blank"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-checkbox-outline-blank"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-checkbox-outline-blank"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-checkbox-outline-blank"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-checkbox-outline-blank"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-checkbox-outline-blank"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-checkbox-outline-blank"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-checkbox-outline-blank"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-checkbox-outline-blank"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-checkbox-outline-blank"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-checkbox-outline-blank" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf372;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf372;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f372" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-checkmark-circle"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-checkmark-circle"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-checkmark-circle"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-checkmark-circle"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-checkmark-circle"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-checkmark-circle"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-checkmark-circle"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-checkmark-circle"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-checkmark-circle"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-checkmark-circle"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-checkmark-circle" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf375;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf375;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f375" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-clipboard"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-clipboard"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-clipboard"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-clipboard"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-clipboard"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-clipboard"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-clipboard"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-clipboard"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-clipboard"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-clipboard"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-clipboard" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf376;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf376;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f376" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-close"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-close"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-close"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-close"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-close"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-close"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-close"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-close"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-close"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-close"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-close" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf2d7;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf2d7;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f2d7" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-cloud"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-cloud"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-cloud"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-cloud"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-cloud"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-cloud"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-cloud"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-cloud"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-cloud"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-cloud"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-cloud" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf37a;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf37a;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f37a" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-cloud-circle"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-cloud-circle"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-cloud-circle"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-cloud-circle"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-cloud-circle"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-cloud-circle"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-cloud-circle"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-cloud-circle"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-cloud-circle"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-cloud-circle"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-cloud-circle" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf377;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf377;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f377" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-cloud-done"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-cloud-done"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-cloud-done"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-cloud-done"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-cloud-done"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-cloud-done"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-cloud-done"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-cloud-done"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-cloud-done"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-cloud-done"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-cloud-done" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf378;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf378;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f378" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-cloud-outline"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-cloud-outline"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-cloud-outline"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-cloud-outline"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-cloud-outline"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-cloud-outline"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-cloud-outline"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-cloud-outline"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-cloud-outline"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-cloud-outline"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-cloud-outline" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf379;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf379;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f379" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-color-palette"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-color-palette"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-color-palette"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-color-palette"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-color-palette"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-color-palette"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-color-palette"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-color-palette"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-color-palette"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-color-palette"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-color-palette" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf37b;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf37b;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f37b" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-compass"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-compass"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-compass"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-compass"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-compass"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-compass"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-compass"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-compass"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-compass"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-compass"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-compass" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf37c;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf37c;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f37c" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-contact"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-contact"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-contact"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-contact"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-contact"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-contact"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-contact"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-contact"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-contact"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-contact"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-contact" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf2d8;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf2d8;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f2d8" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-contacts"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-contacts"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-contacts"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-contacts"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-contacts"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-contacts"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-contacts"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-contacts"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-contacts"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-contacts"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-contacts" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf2d9;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf2d9;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f2d9" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-contract"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-contract"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-contract"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-contract"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-contract"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-contract"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-contract"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-contract"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-contract"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-contract"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-contract" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf37d;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf37d;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f37d" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-create"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-create"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-create"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-create"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-create"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-create"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-create"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-create"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-create"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-create"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-create" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf37e;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf37e;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f37e" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-delete"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-delete"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-delete"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-delete"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-delete"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-delete"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-delete"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-delete"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-delete"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-delete"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-delete" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf37f;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf37f;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f37f" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-desktop"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-desktop"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-desktop"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-desktop"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-desktop"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-desktop"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-desktop"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-desktop"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-desktop"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-desktop"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-desktop" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf380;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf380;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f380" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-document"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-document"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-document"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-document"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-document"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-document"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-document"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-document"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-document"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-document"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-document" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf381;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf381;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f381" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-done"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-done"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-done"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-done"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-done"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-done"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-done"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-done"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-done"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-done"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-done" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf383;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf383;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f383" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-done-all"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-done-all"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-done-all"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-done-all"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-done-all"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-done-all"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-done-all"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-done-all"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-done-all"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-done-all"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-done-all" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf382;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf382;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f382" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-download"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-download"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-download"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-download"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-download"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-download"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-download"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-download"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-download"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-download"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-download" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf2dd;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf2dd;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f2dd" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-drafts"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-drafts"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-drafts"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-drafts"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-drafts"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-drafts"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-drafts"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-drafts"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-drafts"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-drafts"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-drafts" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf384;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf384;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f384" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-exit"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-exit"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-exit"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-exit"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-exit"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-exit"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-exit"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-exit"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-exit"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-exit"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-exit" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf385;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf385;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f385" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-expand"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-expand"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-expand"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-expand"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-expand"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-expand"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-expand"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-expand"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-expand"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-expand"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-expand" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf386;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf386;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f386" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-favorite"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-favorite"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-favorite"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-favorite"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-favorite"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-favorite"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-favorite"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-favorite"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-favorite"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-favorite"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-favorite" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf388;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf388;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f388" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-favorite-outline"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-favorite-outline"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-favorite-outline"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-favorite-outline"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-favorite-outline"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-favorite-outline"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-favorite-outline"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-favorite-outline"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-favorite-outline"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-favorite-outline"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-favorite-outline" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf387;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf387;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f387" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-film"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-film"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-film"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-film"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-film"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-film"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-film"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-film"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-film"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-film"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-film" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf389;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf389;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f389" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-folder"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-folder"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-folder"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-folder"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-folder"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-folder"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-folder"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-folder"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-folder"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-folder"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-folder" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf2e0;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf2e0;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f2e0" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-folder-open"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-folder-open"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-folder-open"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-folder-open"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-folder-open"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-folder-open"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-folder-open"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-folder-open"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-folder-open"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-folder-open"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-folder-open" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf38a;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf38a;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f38a" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-funnel"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-funnel"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-funnel"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-funnel"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-funnel"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-funnel"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-funnel"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-funnel"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-funnel"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-funnel"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-funnel" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf38b;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf38b;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f38b" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-globe"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-globe"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-globe"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-globe"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-globe"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-globe"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-globe"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-globe"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-globe"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-globe"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-globe" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf38c;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf38c;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f38c" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-hand"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-hand"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-hand"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-hand"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-hand"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-hand"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-hand"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-hand"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-hand"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-hand"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-hand" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf2e3;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf2e3;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f2e3" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-hangout"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-hangout"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-hangout"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-hangout"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-hangout"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-hangout"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-hangout"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-hangout"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-hangout"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-hangout"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-hangout" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf38d;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf38d;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f38d" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-happy"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-happy"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-happy"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-happy"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-happy"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-happy"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-happy"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-happy"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-happy"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-happy"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-happy" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf38e;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf38e;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f38e" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-home"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-home"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-home"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-home"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-home"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-home"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-home"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-home"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-home"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-home"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-home" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf38f;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf38f;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f38f" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-image"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-image"></i>
+    </span><span class="step size-16">
+      <i class="icon ion-android-image"></i>
+    </span><span class="step size-18">
+      <i class="icon ion-android-image"></i>
+    </span><span class="step size-21">
+      <i class="icon ion-android-image"></i>
+    </span><span class="step size-24">
+      <i class="icon ion-android-image"></i>
+    </span><span class="step size-32">
+      <i class="icon ion-android-image"></i>
+    </span><span class="step size-48">
+      <i class="icon ion-android-image"></i>
+    </span><span class="step size-64">
+      <i class="icon ion-android-image"></i>
+    </span><span class="step size-96">
+      <i class="icon ion-android-image"></i>
+    </span>
+  </div>
+  <div class="preview-scale"><span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">32</span><span class="step">48</span><span class="step">64</span><span class="step">96</span></div>
+  <div class="usage">
+    <label>Classname:</label>
+    <input class="name" type="text" readonly="readonly" onClick="this.select();" value="ion-android-image" />
+
+    <label>Selectable:</label>
+    <span class="ion">&#xf2e4;</span>
+
+    <label>Escaped HTML:</label>
+    <input class="html" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf2e4;" />
+
+    <label>CSS Content:</label>
+    <input class="css" type="text" readonly="readonly" onClick="this.select();" value="\f2e4" />
+  </div>
+</div>
+<div class="icon-row">
+  <div class="preview-icon"><span class="step size-12">
+      <i class="icon ion-android-laptop"></i>
+    </span><span class="step size-14">
+      <i class="icon ion-android-laptop"></i>
+    </span><span class="step size-16

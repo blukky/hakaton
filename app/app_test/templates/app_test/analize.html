@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Распознать фото - {{ block.super }}
+{% endblock %}
+
+{% block content %}
+
+
+    <div class="bradcam_area breadcam_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="bradcam_text text-center">
+                        <h3>Загрузите фото</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+            {% comment %} 
+            <form role="form" class="form-element">
+
+                <div class="form-group">
+                  <label for="exampleInputFile">      </label>
+                  <input type="file" id="exampleInputFile">
+                </div>
+              <div class="box-footer">
+                <button type="submit" class="btn btn-danger">Загрузить</button>
+              </div>
+            </form> {% endcomment %}
+          
+
+<div class="clearfix"></div>
+<div class="row">
+<div class="col-md-12 col-sm-12  ">
+
+<div class="clearfix"></div>
+</div>
+<div class="x_content">
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-6 offset-md-2">
+<p>Перетащите фото в поле ниже или щелкните, чтобы выбрать фото.</p>
+<form action="form_upload.html" class="dropzone"></form>
+<br />
+<br />
+<br />
+<br />
+</div>
+</div>
+</div>
+</div>
+</div>
+
+{% endblock %}
