@@ -25,7 +25,7 @@ def get_face_descriptor(filename):
     return face_descriptor
 
 
-if __name__ == '__main__':
+def find_face_vk(image_url):
     sp = dlib.shape_predictor('shape_predictor_68_face_landmarks.dat')
     face_rec = dlib.face_recognition_model_v1(
             'dlib_face_recognition_resnet_model_v1.dat')
@@ -34,7 +34,7 @@ if __name__ == '__main__':
     min_distance_file = ''
     min_distance = 2
     files = os.listdir('npy')
-    f1 = get_face_descriptor('1.jpg')
+    f1 = get_face_descriptor(image_url)
 
     for file_ in files:
         file_name = 'npy/' + file_
@@ -45,5 +45,5 @@ if __name__ == '__main__':
                 min_distance = euc_distance
                 min_distance_file = file_
     min_distance_file = min_distance_file.split('_')[0]
-    print('https://vk.com/id' + min_distance_file.replace('.npy', ''))
-    print('Result: ' + str(min_distance) + ' (< 0,52 = Win!)')
+    # print('https://vk.com/id' + min_distance_file.replace('.npy', ''))
+    # print('Result: ' + str(min_distance) + ' (< 0,52 = Win!)')

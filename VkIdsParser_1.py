@@ -1,28 +1,35 @@
 import vk_api
 import time
 import codecs
+from DownloadPhotosToJpg_2 import downloadPhotos
+from JpgToNpy_3 import get_face_descriptorf
+from FindIntoNpy_4 import find_face_vk
+from NpyToEmbeddingsBin_5 import NpyToEbeding
+from FindFaceInEmbeddingsBin_6 import print_url
 
 
-if __name__ == '__main__':
+def parse_vk(image_url):
     # Заходим ВКонтакте под своим логином
-    vk_session = vk_api.VkApi('79996105905', 'N1a2s3t4y5a6')
-    vk_session.auth()
+    token = 'fe4376b10059b99f985c66a2828211ab8908e205fb04d8e9f953b1071cfbdecc992b82cf1c9350e9588f9'
+    VERSION_ID = "7605360"
+    vk_session = vk_api.VkApi(token=token, api_version=vk_api.__version__, app_id=VERSION_ID)
     vk = vk_session.get_api()
 
     # Пишем возраст от и до людей которых надо спарсить
-    age = 18
-    age_max = 30
+    age = 20
+    age_max = 35
 
     # Номер города
     city_number = 104
 
     # 1 - девушки, 2 - парни
-    gender = 1
+    gender = 2
 
     # Открываем файл для записи результатов
     ff = codecs.open('ids.txt', 'w', encoding='utf8')
 
     # Перебор возрастов
+
     while age <= age_max:
         month = 1
         # Перебор месяцев рождения
@@ -32,7 +39,7 @@ if __name__ == '__main__':
             # Пишем какую группу людей качаем
             print('Download ID: ' + str(age) + ' age, born in ' + str(month))
             # Получаем 1000 юзеров - их ФИО, айди, и фотку
-            z = vk.users.search(count=1000,
+            z = vk.users.search(count=2000,
                                 fields='id, photo_max_orig, has_photo, '
                                        'first_name, last_name',
                                 city=city_number,
@@ -51,4 +58,10 @@ if __name__ == '__main__':
         age = age + 1
 
     ff.close()
-    print('Done!')
+
+    downloadPhotos()
+    get_face_descriptor()
+    find_face_vk(image_url)
+    NpyToEbeding()
+    urls = print_url(image_url)
+    return urls

@@ -27,6 +27,8 @@ def get_face_descriptor(filename):
 
 
 def print_id(n):
+    global urls
+    urls = []
     best_dx = ids[n]
     s = ''
     with open('associations.txt', 'r') as file_:
@@ -37,10 +39,10 @@ def print_id(n):
     s = 'https://vk.com/id' + s.split('_')[0]
     for bad_symbols in ['.txt', '.npy', '\n']:
         s = s.replace(bad_symbols, '')
-    print(s)
+    urls.append(s)
 
 
-if __name__ == '__main__':
+def print_url(image_url):
     sp = dlib.shape_predictor('shape_predictor_68_face_landmarks.dat')
     face_rec = dlib.face_recognition_model_v1(
         'dlib_face_recognition_resnet_model_v1.dat')
@@ -52,7 +54,7 @@ if __name__ == '__main__':
     query_time_params = {'efSearch': 400}
     index.setQueryTimeParams(query_time_params)
 
-    embedding = get_face_descriptor('1.jpg')
+    embedding = get_face_descriptor(image_url)
 
     ids, dists = index.knnQuery(embedding, k=5)
     print_id(0)
@@ -60,3 +62,4 @@ if __name__ == '__main__':
     print_id(2)
     print_id(3)
     print_id(4)
+    return urls

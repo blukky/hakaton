@@ -42,11 +42,21 @@ def get_photos_by_id(user_id_):
     except Exception as ex:
         print(ex)
 
+def downloadPhotos():
 
-    vk_session = vk_api.VkApi('логин ВК', 'Пароль ВК')
-    vk_session.auth()
-
+    token = 'fe4376b10059b99f985c66a2828211ab8908e205fb04d8e9f953b1071cfbdecc992b82cf1c9350e9588f9'
+    VERSION_ID = "7605360"
+    vk_session = vk_api.VkApi(token=token, api_version=vk_api.__version__, app_id=VERSION_ID)
     vk = vk_session.get_api()
+
+    ff = codecs.open(u'ids.txt', 'r', encoding='utf8')
+
+    e = 0
+    for x in ff:
+        e += 1
+        print(e)
+        mas = x.split('|')
+        user_id = int(mas[0])
         get_photos_by_id(user_id)
 
-    ff.close()
+ff.close()

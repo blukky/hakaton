@@ -4,7 +4,7 @@ import numpy as np
 import nmslib
 
 
-if __name__ == '__main__':
+def NpyToEbeding():
     index = nmslib.init(method='hnsw',
                         space='l2',
                         data_type=nmslib.DataType.DENSE_VECTOR)
